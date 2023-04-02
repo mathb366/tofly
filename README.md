@@ -1,2 +1,2 @@
 # tofly
-Project for a technology fair carried out with seven other people
+Projeto feito por mim e mais outros sete alunos para uma feira de técnologia da escola técnica FUNEC. Esse projeto tem como objetivo ajudar e informar sobre transtornos psicológicos. 
