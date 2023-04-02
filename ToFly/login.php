@@ -1,0 +1,121 @@
+<?php
+session_start();
+$login = $_POST['email'];
+$senha = $_POST['senha'];
+
+$senhaSegura = password_hash($senha, PASSWORD_DEFAULT);
+$entrar = $_POST['Enviar'];
+?>
+<!DOCTYPE html>
+<html lang="PT-br">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="keywords" content="footer, address, phone, icons" />
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+      <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+      <link rel="icon" href="img/logo_feira_2.png" sizes="16x16" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>To Fly</title>
+      <meta charset= "UTF-8">
+    </head>
+   <body style="background-image: url(img/background.jpg)">
+        <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                      <a href="index.html">TOFLY</a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul class="teste_text">
+                              <li><a href="index.html">Página Inicial</a></li>
+                              <li><a href="sobre_nos.html">Sobre nós</a></li>
+                              <li><a href="ajuda_dicas.html">Transtornos</a></li>
+                              <li><a href="depoimentos.html">Depoimentos</a></li>
+                              <li><a href="contatos.html">Contatos</a></li>
+                              <li><a href="participe.html">Participe</a></li>
+                              <li><a href="explicativo.html">Explicativo</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+       <a href="index.html"><img class="logo_imagem"src="img/logo_feira_2.png"></a>
+       <div class="cadastro">
+           <form style="bottom: -190px;" class="box" name="formulario_cadastro" action="criar_cadastro.php" method="post">
+                 <h1>Login</h1>
+                 <input type="text" name="email" placeholder=" E-mail"><br> 
+                 <input type="password" name="senha" id="senha" placeholder=" Senha" maxlength="15" minlength="8" ><br>
+                 <input type="submit" name="Enviar" value="Login"><br>
+                  <p style="color: white;">Não tem cadastro no nosso site? <a style=" font-size: 20px; text-decoration: none; color: limegreen"; href="cadastro.html">Cadastro</a></p>
+           </form>
+       </div>
+       
+    
+    
+		<footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3><img src="img/logo_feira_2.png" style="height: 120px; width: 120px;"></h3>
+ 
+		<p class="footer-links">
+		<a href="index.html">Página Inicial</a>
+	·
+		<a href="depoimentos.html">Depoimentos</a>
+	·
+		<a href="ajuda_dicas.html">Ajuda e Dicas</a>
+	·
+		<a href="participe.html">Participe do Projeto</a>
+	·
+		<a href="explicativo.html">Explicativo</a>
+	·
+		<a href="contatos.html">Contato</a>
+		</p>
+ 
+		<p class="footer-company-name">Projeto ToFly &copy; 2019 Todos os Direitos Reservados.</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span>FUNEC Riacho</span> Contagem, Brasil</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>(31)91234-4312</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:iniciativatofly@gmail.com">iniciativatofly@gmail.com</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>Sobre o Projeto</span>
+	   O Projeto To Fly é um projeto realizado para...
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="https://www.instagram.com/iniciativatofly/"><i class="fa fa-instagram"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+ 
+		</div>
+ 
+		</div>
+ 
+		</footer>
+   </body>
+</html>
